@@ -1,0 +1,27 @@
+# Vivado
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.runs/
+.gen/
+.srcs/
+.xpr.user
+
+# Logs
+*.log
+*.jou
+*.str
+
+# Simulation
+*.vcd
+*.wdb
+*.pb
+
+# Temporary files
+*.tmp
+*.backup
+
+# OS
+.DS_Store
+Thumbs.db
