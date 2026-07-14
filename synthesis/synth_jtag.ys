@@ -1,0 +1,49 @@
+#=========================================================
+# JTAG Top Synthesis Script
+#=========================================================
+
+# Read RTL Files
+read_verilog multiplier_4x4.v
+read_verilog tap_controller.v
+read_verilog instruction_register.v
+read_verilog instruction_decoder.v
+read_verilog boundary_scan_cell.v
+read_verilog boundary_scan_register.v
+read_verilog bypass_register.v
+read_verilog jtag_top.v
+
+# Set Top Module
+hierarchy -top jtag_top
+
+# Check Design
+check
+
+# Convert Processes
+proc
+
+# Optimize
+opt
+
+# Convert Memories
+memory
+
+# Optimize
+opt
+
+# FSM Extraction
+fsm
+
+# Optimize
+opt
+
+# Technology Independent Mapping
+techmap
+
+# Final Optimization
+opt
+
+# Print Statistics
+stat
+
+# Write Synthesized Netlist
+write_verilog jtag_top_synth.v
