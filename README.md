@@ -1,5 +1,4 @@
-# IEEE 1149.1 JTAG Boundary Scan Implementation for a 4×4 Multiplier
-
+# RTL Design & Functional Verification of an IEEE 1149.1 JTAG Boundary Scan Architecture for a 4×4 Multiplier
 <p align="center">
 
 ![Verilog](https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge)
@@ -14,7 +13,7 @@
 
 ## Project Overview
 
-This project implements a complete **IEEE 1149.1 (JTAG) Boundary Scan architecture** integrated with a **4×4 unsigned multiplier** to demonstrate the fundamentals of **Design-for-Testability (DFT)**.
+This project presents the **RTL design and functional verification** of an **IEEE 1149.1 JTAG Boundary Scan architecture** integrated with a **4×4 unsigned multiplier** to demonstrate **basic Design-for-Testability (DFT)** principles.
 
 The design includes a complete **Test Access Port (TAP) Controller**, **Instruction Register**, **Instruction Decoder**, **Boundary Scan Register**, **Boundary Scan Cells**, and **Bypass Register**, enabling structural testing and boundary scan operations through a standard JTAG interface.
 
@@ -45,6 +44,8 @@ The project was developed using **Verilog HDL**, functionally verified with **Vi
 - ✔ Modular RTL Design
 - ✔ Self-checking Verilog Testbenches
 - ✔ RTL Synthesis using Yosys
+- ✔ Functional Verification
+- ✔ Waveform Debugging
 
 ---
 
@@ -184,17 +185,26 @@ The synthesized design successfully maps all JTAG components into synthesizable 
 
 ---
 
-# Concepts Demonstrated
+## Technologies & Skills
 
-- IEEE 1149.1 JTAG Architecture
-- Design-for-Testability (DFT)
-- Boundary Scan Testing
-- TAP Controller Design
-- Boundary Scan Register
-- Scan Chain Operation
+- Verilog HDL
 - RTL Design
-- Self-checking Verification
+- Functional Verification
+- Testbench Development
+- IEEE 1149.1 JTAG
+- TAP Controller
+- Boundary Scan Register (BSR)
+- Boundary Scan Cells (BSC)
+- Instruction Register (IR)
+- Instruction Decoder
+- Bypass Register
+- Scan Chain
+- Basic DFT
+- RTL Simulation
+- Waveform Debugging
 - RTL Synthesis
+- Vivado
+- Yosys
 
 ---
 
@@ -215,8 +225,7 @@ The synthesized design successfully maps all JTAG components into synthesizable 
 
 **Snehanjali**
 
-B.Tech Student | Aspiring RTL • DFT • VLSI Engineer
+B.Tech Student | Aspiring Design Verification (DV) Engineer
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star.
